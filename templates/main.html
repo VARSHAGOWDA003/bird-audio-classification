@@ -1,0 +1,69 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Classifier</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bird Species Identification</h1>
+        <form action="/main" method="post" enctype="multipart/form-data">
+            <label class="file-label">
+                Select an Audio File:
+                <input type="file" name="audio_file" accept=".wav,.mp3" required>
+            </label>
+            <button type="submit" class="submit-btn">Predict</button>
+        </form>
+        {% if result %}
+        <div class="result-box">
+            <h3>Prediction Result:</h3>
+            <p>{{ result }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Classifier</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bird Species Identification</h1>
+        <form action="/main" method="post" enctype="multipart/form-data">
+            <label class="file-label">
+                Select an Audio File:
+                <input type="file" name="audio_file" accept=".wav,.mp3" required>
+            </label>
+            <button type="submit" class="submit-btn">Predict</button>
+        </form>
+
+        {% if audio_url %}
+        <div class="audio-box">
+            <h3>Uploaded Audio:</h3>
+            <audio controls>
+                <source src="http://127.0.0.1:5000/{{ audio_url }}" type="audio/mpeg">
+            </audio>
+        </div>
+        {% endif %}
+
+        {% if img %}
+        <br>
+            <center><img src="{{img}}" style="width: 200px;height: 200px;"></center>
+        {% endif %}
+
+        {% if result %}
+        <div class="result-box">
+            <h3>Prediction Result:</h3>
+            <p>{{ result }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
