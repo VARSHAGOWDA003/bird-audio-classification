@@ -47,18 +47,7 @@ python -m spacy download en_core_web_lg
 ### 🟢 Register Page  
 This is the registration interface where users can create an account to use the bird identification system.
 
-![Register Page](images/register_page.png)
+![Register Page](register_page.png)
+![Login Page](login_page.png)
+![Bird Name & Image Display](bird_nameimage_display.png)
 
----
-
-### 🔵 Login Page  
-The login screen for returning users to access the system.
-
-![Login Page](images/login_page.png)
-
----
-
-### 🐦 Bird Name & Image Display  
-After processing the audio input, the system shows the predicted bird name along with its image.
-
-![Bird Name & Image Display](images/bird_nameimage_display.png)
