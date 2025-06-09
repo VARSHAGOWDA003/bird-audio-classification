@@ -1,11 +1,9 @@
 # Bird Species Identification Using Audio Signals  
 *A Machine Learning and Neural Network Approach*
 
-This project focuses on identifying bird species based on their vocalizations using audio signal processing and machine learning techniques. The system processes bird audio clips, extracts key features, and classifies them using both traditional ML models and deep learning architectures. It outputs the predicted bird name and its image.
+The system processes bird audio clips, extracts key features, and classifies them using both traditional ML models and deep learning architectures. It outputs the predicted bird name and its image.
 ---
-## 🔍 Introduction
 
-Birds communicate through species-specific sounds. Manually identifying bird calls is time-consuming and requires expert knowledge. This system automates the identification process using audio signal features and trained ML/DL models, making bird monitoring faster and accessible for conservation, biodiversity studies, and educational purposes.
 ---
 ## 🎯 Features
 
@@ -63,4 +61,4 @@ The login screen for returning users to access the system.
 ### 🐦 Bird Name & Image Display  
 After processing the audio input, the system shows the predicted bird name along with its image.
 
-![Bird Name & Image Display](images/bird_name_image_display.png)
+![Bird Name & Image Display](images/bird_name&image_display.png)
